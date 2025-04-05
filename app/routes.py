@@ -15,7 +15,7 @@ def register_job(request_type):
     job = {
         "id": job_id,
         "type": request_type,
-        "data": data
+        "question": data
     }
     # Put the job in queue
     webserver.task_runner.queue.put(job)
@@ -23,9 +23,8 @@ def register_job(request_type):
     return jsonify({"job_id": job_id})
 
 def res_for(file_path):
-    file = open(file_path, "r")
-    data = file.read()
-    file.close()
+    with open(file_path, 'r') as f:
+        data = json.load(f)
     return data
 
 def get_job_status(job_id):

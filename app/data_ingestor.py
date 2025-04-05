@@ -22,3 +22,22 @@ class DataIngestor:
             'Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)',
             'Percent of adults who engage in muscle-strengthening activities on 2 or more days a week',
         ]
+    
+    def states_mean(data):
+        pass
+    def state_mean(data):
+        pass
+    def best5(data):
+        pass
+    def worst5(data):
+        pass
+    def global_mean(data):
+        pass
+    def diff_from_mean(data):
+        pass
+    def state_diff_from_mean(data):
+        pass
+    def mean_by_category(data):
+        pass
+    def state_mean_by_category(data):
+        pass

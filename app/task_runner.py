@@ -1,19 +1,11 @@
 from queue import Queue
 from threading import Thread, Event
-import time
+import json
 import os
+from flask import current_app
 
 class ThreadPool:
     def __init__(self):
-        # You must implement a ThreadPool of TaskRunners
-        # Your ThreadPool should check if an environment variable TP_NUM_OF_THREADS is defined
-        # If the env var is defined, that is the number of threads to be used by the thread pool
-        # Otherwise, you are to use what the hardware concurrency allows
-        # You are free to write your implementation as you see fit, but
-        # You must NOT:
-        #   * create more threads than the hardware concurrency allows
-        #   * recreate threads for each task
-        # Note: the TP_NUM_OF_THREADS env var will be defined by the checker
         env_num_threads = os.environ.get("TP_NUM_OF_THREADS")
         sys_threads = os.cpu_count() or 1 # if returns None, use at least 1 thread
         if env_num_threads is not None:
@@ -25,7 +17,7 @@ class ThreadPool:
             num_threads = sys_threads
 
         self.num_threads = min(num_threads, sys_threads) # hardware limit
-        self.queue = Queue() # queue for jobs
+        self.queue = Queue()
         self.shutdown = Event()
 
     def start(self):
@@ -34,20 +26,43 @@ class ThreadPool:
             thread = TaskRunner(self.queue, self.shutdown)
             thread.start()
 
-
-
 class TaskRunner(Thread):
     def __init__(self, queue, shutdown):
         # TODO: init necessary data structures
-        super().__init__()
-        self.queue = queue
-        self.shutdown = shutdown
+        Thread.__init__(self)
+        self.queue: Queue = queue
+        self.shutdown: Event = shutdown
 
     def run(self):
         while not self.shutdown.is_set():
             # TODO
             # Get pending job
             job = self.queue.get()
-            # Execute the job and save the result to disk
-            # Repeat until graceful_shutdown
-            pass
+            job_id = job["id"]
+            job_type = job["type"]
+            job_question = job["question"]
+
+            data_ingestor = current_app.data_ingestor
+            
+            if job_type == "states_mean":
+                result = data_ingestor.states_mean(job_question)
+            elif job_type == "state_mean":
+                result = data_ingestor.state_mean(job_question)
+            elif job_type == "best5":
+                result = data_ingestor.best5(job_question)
+            elif job_type == "worst5":
+                result = data_ingestor.worst5(job_question)
+            elif job_type == "global_mean":
+                result = data_ingestor.global_mean(job_question)
+            elif job_type == "diff_from_mean":
+                result = data_ingestor.diff_from_mean(job_question)
+            elif job_type == "state_diff_from_mean":
+                result = data_ingestor.state_diff_from_mean(job_question)
+            elif job_type == "mean_by_category":
+                result = data_ingestor.mean_by_category(job_question)
+            elif job_type == "state_mean_by_category":
+                result = data_ingestor.state_mean_by_category(job_question)
+
+            file_path = f"results/job_{job_id}.json"
+            with open(file_path, 'w') as f:
+                json.dump(result, f)
