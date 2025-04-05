@@ -26,23 +26,28 @@ class ThreadPool:
 
         self.num_threads = min(num_threads, sys_threads) # hardware limit
         self.queue = Queue() # queue for jobs
+        self.shutdown = Event()
 
     def start(self):
         """ Create and run threads """
         for _ in range(self.num_threads):
-            thread = TaskRunner(self.queue)
+            thread = TaskRunner(self.queue, self.shutdown)
+            thread.start()
 
 
 
 class TaskRunner(Thread):
-    def __init__(self):
+    def __init__(self, queue, shutdown):
         # TODO: init necessary data structures
-        pass
+        super().__init__()
+        self.queue = queue
+        self.shutdown = shutdown
 
     def run(self):
-        while True:
+        while not self.shutdown.is_set():
             # TODO
             # Get pending job
+            job = self.queue.get()
             # Execute the job and save the result to disk
             # Repeat until graceful_shutdown
             pass
