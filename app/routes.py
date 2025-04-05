@@ -11,17 +11,30 @@ def register_job(request_type):
     job_id = webserver.job_counter
     # Increment job_id counter for the next request
     webserver.job_counter += 1
-    # json for job
+    # create dictionary for every
     job = {
         "id": job_id,
         "type": request_type,
         "data": data
     }
     # Put the job in queue
-    webserver.task_runner.queue.put(jsonify(job))
+    webserver.task_runner.queue.put(job)
     # Return associated job_id
     return jsonify({"job_id": job_id})
 
+def res_for(file_path):
+    file = open(file_path, "r")
+    data = file.read()
+    file.close()
+    return data
+
+def get_job_status(job_id):
+    file_path = f"results/{job_id}.json"
+    if not os.path.exists(file_path):
+        # The result is not done yet
+        return "running"
+    else:
+        return "done"
 
 # Example endpoint definition
 @webserver.route('/api/post_endpoint', methods=['POST'])
@@ -42,26 +55,43 @@ def post_endpoint():
         return jsonify({"error": "Method not allowed"}), 405
     
 @webserver.route('/api/jobs', methods=['GET'])
-def all_jobs(job_id):
-    pass
+def all_jobs():
+    jobs = [{f"job_id_{i}": get_job_status(i)} for i in range(webserver.job_counter)]
+    # Returns a json that contains a list of all job_ids and its status
+    return jsonify({
+        "status": "done",
+        "data": jobs
+    })
+
 
 @webserver.route('/api/num_jobs', methods=['GET'])
-def get_num_jobs(job_id):
-    pass
+def get_num_jobs():
+    files = os.listdir("results")
+    # difference of all jobs and done jobs = running jobs
+    return webserver.job_counter - len(files)
 
 @webserver.route('/api/get_results/<job_id>', methods=['GET'])
 def get_response(job_id):
     print(f"JobID is {job_id}")
-    # TODO
     # Check if job_id is valid
-    # Check if job_id is done and return the result
-    res = res_for(job_id)
+    if job_id >= webserver.job_counter:
+        return jsonify({
+            "status": "error",
+            "reason": "Invalid job_id"
+        })
+    
+    file_path = f"results/{job_id}.json"
+    if not os.path.exists(file_path):
+        # The result is not done yet
+        return jsonify({"status": "running"})
+    
+    # Get the result from file
+    res = res_for(file_path)
+
     return jsonify({
-        'status': 'done',
-        'data': res
+        "status": "done",
+        "data": res
     })
-    # If not, return running status
-    return jsonify({'status': 'NotImplemented'})
 
 @webserver.route('/api/states_mean', methods=['POST'])
 def states_mean_request():
