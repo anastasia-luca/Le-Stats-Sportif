@@ -53,20 +53,20 @@ class TaskRunner(Thread):
         # Wait until csv is processed
         self.barrier.wait()
 
-        while not self.shutdown.is_set():
-            # TODO
+        while True:
             # Get pending job
             job = self.queue.get()
             job_id = job["id"]
             job_type = job["type"]
-            job_question = job["question"]
+            job_question = job["data"]["question"]
+            job_state = job["data"]["state"]
 
             data_ingestor = current_app.data_ingestor
             
             if job_type == "states_mean":
                 result = data_ingestor.states_mean(job_question)
             elif job_type == "state_mean":
-                result = data_ingestor.state_mean(job_question)
+                result = data_ingestor.state_mean(job_question, job_state)
             elif job_type == "best5":
                 result = data_ingestor.best5(job_question)
             elif job_type == "worst5":
@@ -76,11 +76,11 @@ class TaskRunner(Thread):
             elif job_type == "diff_from_mean":
                 result = data_ingestor.diff_from_mean(job_question)
             elif job_type == "state_diff_from_mean":
-                result = data_ingestor.state_diff_from_mean(job_question)
+                result = data_ingestor.state_diff_from_mean(job_question, job_state)
             elif job_type == "mean_by_category":
                 result = data_ingestor.mean_by_category(job_question)
             elif job_type == "state_mean_by_category":
-                result = data_ingestor.state_mean_by_category(job_question)
+                result = data_ingestor.state_mean_by_category(job_question, job_state)
 
             file_path = f"results/job_{job_id}.json"
             with open(file_path, 'w') as f:

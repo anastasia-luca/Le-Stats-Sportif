@@ -15,7 +15,7 @@ def register_job(request_type):
     job = {
         "id": job_id,
         "type": request_type,
-        "question": data
+        "data": data
     }
     # Put the job in queue
     webserver.task_runner.queue.put(job)
