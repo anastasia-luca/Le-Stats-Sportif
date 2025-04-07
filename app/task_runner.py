@@ -1,12 +1,14 @@
+''' Thread Pool Class for creating and running threads '''
+import os
+import json
 from queue import Queue
 from threading import Thread, Event
-import json
-import os
 from app.barrier import SimpleBarrier
-from app.data_ingestor import DataIngestor
 
 class ThreadPool:
+    ''' Class for managing threads '''
     def __init__(self):
+        ''' Initialize ThreadPool instance '''
         env_num_threads = os.environ.get("TP_NUM_OF_THREADS")
         sys_threads = os.cpu_count() or 1 # if returns None, use at least 1 thread
         if env_num_threads is not None:
@@ -20,43 +22,45 @@ class ThreadPool:
         self.queue = Queue()
         self.shutdown = Event()
         self.barrier = SimpleBarrier(self.num_threads + 1)
-        self.data_ingestor = None
-
-    def set_data_ingestor(self, data_ingestor):
-        self.data_ingestor: DataIngestor = data_ingestor
 
     def start(self):
-        """ Create and run threads """
+        """ Create and start threads """
         for _ in range(self.num_threads):
-            thread = TaskRunner(self.queue, self.shutdown, self.barrier, self.data_ingestor)
+            thread = TaskRunner(self.queue, self.shutdown, self.barrier)
             thread.start()
 
+    def __len__(self):
+        ''' Return the number of threads '''
+        return self.num_threads
+
 class TaskRunner(Thread):
-    def __init__(self, queue, shutdown, barrier, data_ingestor):
-        # TODO: init necessary data structures
+    ''' Thread that process a job from queue '''
+    def __init__(self, queue, shutdown, barrier):
+        ''' Initialize necessary data structures '''
         Thread.__init__(self)
         self.queue: Queue = queue
         self.shutdown: Event = shutdown
         self.barrier: SimpleBarrier = barrier
-        # self.data_ingestor: DataIngestor = data_ingestor
 
     def run(self):
-        # Wait until csv is processed
+        ''' Wait until csv is processed, then process a job from queue '''
         self.barrier.wait()
         from app import webserver
         self.data_ingestor = webserver.data_ingestor
 
         while True:
-            # Get pending job
+            # Get pending job from the queue
             job = self.queue.get()
             job_id = job["id"]
             job_type = job["type"]
             job_question = job["data"]["question"]
             try:
                 job_state = job["data"]["state"]
-            except:
+            except KeyError:
                 pass
-            
+
+            # Process job based on its type
+            result = None
             if job_type == "states_mean":
                 result = self.data_ingestor.states_mean(job_question)
             elif job_type == "state_mean":
@@ -76,6 +80,7 @@ class TaskRunner(Thread):
             elif job_type == "state_mean_by_category":
                 result = self.data_ingestor.state_mean_by_category(job_question, job_state)
 
+            # Write the result to JSON file
             file_path = f"results/job_{job_id}.json"
-            with open(file_path, 'w') as f:
+            with open(file_path, 'w', encoding='utf-8') as f:
                 json.dump(result, f)

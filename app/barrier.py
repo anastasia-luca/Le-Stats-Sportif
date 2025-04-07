@@ -1,4 +1,4 @@
-""" Implementation of a barrier """
+''' Implementation of a barrier '''
 from threading import Event, Lock
 
 class SimpleBarrier():

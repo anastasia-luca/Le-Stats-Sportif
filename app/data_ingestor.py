@@ -1,3 +1,4 @@
+''' Data Ingestor Class '''
 import pandas as pd
 from app.barrier import SimpleBarrier
 
@@ -95,6 +96,7 @@ class DataIngestor:
         return {job_state: (global_avg - state_avg)}
 
     def mean_by_category(self, question):
+        ''' Returns a dictionary for mean_by_category request '''
         df = self.data[
             (self.data["Question"] == question)
             ].groupby(["LocationDesc",
@@ -104,6 +106,7 @@ class DataIngestor:
                 : value for key, value in df.to_dict().items()}
 
     def state_mean_by_category(self, question, job_state):
+        ''' Returns a dictionary for state_mean_by_category request '''
         df = self.data[
             (self.data["Question"] == question) &
             (self.data["LocationDesc"] == job_state)
