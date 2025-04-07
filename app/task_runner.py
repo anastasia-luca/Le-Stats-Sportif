@@ -2,7 +2,7 @@
 import os
 import json
 from queue import Queue
-from threading import Thread, Event
+from threading import Thread
 from app.barrier import SimpleBarrier
 
 class ThreadPool:
@@ -20,13 +20,14 @@ class ThreadPool:
             num_threads = sys_threads
         self.num_threads = min(num_threads, sys_threads) # hardware limit
         self.queue = Queue()
-        self.shutdown = Event()
+        self.shutdown = False
         self.barrier = SimpleBarrier(self.num_threads + 1)
+        self.lst_done_jobs = []
 
     def start(self):
         """ Create and start threads """
         for _ in range(self.num_threads):
-            thread = TaskRunner(self.queue, self.shutdown, self.barrier)
+            thread = TaskRunner(self.queue, self.shutdown, self.barrier, self.lst_done_jobs)
             thread.start()
 
     def __len__(self):
@@ -35,12 +36,13 @@ class ThreadPool:
 
 class TaskRunner(Thread):
     ''' Thread that process a job from queue '''
-    def __init__(self, queue, shutdown, barrier):
+    def __init__(self, queue, shutdown, barrier, done_jobs):
         ''' Initialize necessary data structures '''
         Thread.__init__(self)
         self.queue: Queue = queue
-        self.shutdown: Event = shutdown
+        self.shutdown: bool = shutdown
         self.barrier: SimpleBarrier = barrier
+        self.lst_done_jobs: list = done_jobs
 
     def run(self):
         ''' Wait until csv is processed, then process a job from queue '''
@@ -51,6 +53,8 @@ class TaskRunner(Thread):
         while True:
             # Get pending job from the queue
             job = self.queue.get()
+            if job is None: # Thread exits loop
+                break
             job_id = job["id"]
             job_type = job["type"]
             job_question = job["data"]["question"]
@@ -84,3 +88,5 @@ class TaskRunner(Thread):
             file_path = f"results/job_{job_id}.json"
             with open(file_path, 'w', encoding='utf-8') as f:
                 json.dump(result, f)
+            # Add the done job in list after writing the result in file
+            self.lst_done_jobs.append(job_id)

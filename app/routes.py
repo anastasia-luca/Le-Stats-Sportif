@@ -1,11 +1,15 @@
 ''' Webserver routes '''
-import os
 import json
 from flask import request, jsonify
 from app import webserver
 
 def register_job(data, request_type):
     ''' Register a new job and add it to the queue '''
+    if webserver.task_runner.shutdown is True:
+        return jsonify({
+            "status": "error",
+            "reason": "shutting down"
+        })
     # Associate a job_id for request
     job_id = webserver.job_counter
     # Increment job_id counter for the next request
@@ -28,12 +32,10 @@ def res_for(file_path):
     return data
 
 def get_job_status(job_id):
-    ''' Return job status based on file existence '''
-    file_path = f"results/{job_id}.json"
-    if not os.path.exists(file_path):
-        # The result is not done yet
-        return "running"
-    return "done"
+    ''' Return job status '''
+    if job_id in webserver.task_runner.lst_done_jobs:
+        return "done"
+    return "running"
 
 @webserver.route('/api/post_endpoint', methods=['POST'])
 def post_endpoint():
@@ -51,10 +53,23 @@ def post_endpoint():
     # Method Not Allowed
     return jsonify({"error": "Method not allowed"}), 405
 
+@webserver.route('/api/graceful_shutdown', methods=['GET'])
+def shutdown():
+    ''' Signal shutdown '''
+    if webserver.task_runner.shutdown is False:
+        for _ in range(webserver.task_runner.num_threads):
+            webserver.task_runner.queue.put(None)
+
+    webserver.task_runner.shutdown = True
+
+    if webserver.task_runner.queue.qsize() > 0:
+        return jsonify({"status": "running"})
+    return jsonify({"status": "done"})
+
 @webserver.route('/api/jobs', methods=['GET'])
 def all_jobs():
     ''' Return a JSON containing all job IDs with their status '''
-    jobs = [{f"job_id_{i}": get_job_status(i)} for i in range(webserver.job_counter)]
+    jobs = [{f"job_id_{i}": get_job_status(i)} for i in range(1, webserver.job_counter)]
     # Returns a json that contains a list of all job_ids and its status
     return jsonify({
         "status": "done",
@@ -65,9 +80,12 @@ def all_jobs():
 @webserver.route('/api/num_jobs', methods=['GET'])
 def get_num_jobs():
     ''' Return number of running jobs '''
-    files = os.listdir("results")
     # difference of all jobs and done jobs = running jobs
-    return webserver.job_counter - len(files)
+    return jsonify({
+        "status": "done",
+        "data": {"running jobs" :
+                webserver.job_counter - len(webserver.task_runner.lst_done_jobs) - 1}
+    })
 
 @webserver.route('/api/get_results/<job_id>', methods=['GET'])
 def get_response(job_id):
@@ -79,11 +97,12 @@ def get_response(job_id):
             "status": "error",
             "reason": "Invalid job_id"
         })
-    file_path = f"results/job_{job_id}.json"
-    if not os.path.exists(file_path):
+
+    if job_id not in webserver.task_runner.lst_done_jobs:
         # The result is not done yet
         return jsonify({"status": "running"})
     # Get the result from file
+    file_path = f"results/job_{job_id}.json"
     res = res_for(file_path)
     return jsonify({
         "status": "done",
