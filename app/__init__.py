@@ -11,8 +11,8 @@ webserver.task_runner = ThreadPool()
 
 webserver.task_runner.start()
 
-data_ingestor = DataIngestor("./nutrition_activity_obesity_usa_subset.csv", webserver.task_runner.barrier)
-webserver.task_runner.set_data_ingestor(data_ingestor)
+webserver.data_ingestor = DataIngestor("./nutrition_activity_obesity_usa_subset.csv", webserver.task_runner.barrier)
+webserver.task_runner.set_data_ingestor(webserver.data_ingestor)
 
 webserver.job_counter = 1
 

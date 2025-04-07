@@ -4,9 +4,7 @@ from flask import request, jsonify
 import os
 import json
 
-def register_job(request_type):
-    # Get request data
-    data = request.json
+def register_job(data, request_type):
     # Associate a job_id for request
     job_id = webserver.job_counter
     # Increment job_id counter for the next request
@@ -52,7 +50,7 @@ def post_endpoint():
     else:
         # Method Not Allowed
         return jsonify({"error": "Method not allowed"}), 405
-    
+
 @webserver.route('/api/jobs', methods=['GET'])
 def all_jobs():
     jobs = [{f"job_id_{i}": get_job_status(i)} for i in range(webserver.job_counter)]
@@ -71,7 +69,8 @@ def get_num_jobs():
 
 @webserver.route('/api/get_results/<job_id>', methods=['GET'])
 def get_response(job_id):
-    print(f"JobID is {job_id}")
+    job_id = int(job_id)
+    # print(f"JobID is {job_id}")
     # Check if job_id is valid
     if job_id >= webserver.job_counter:
         return jsonify({
@@ -79,7 +78,7 @@ def get_response(job_id):
             "reason": "Invalid job_id"
         })
     
-    file_path = f"results/{job_id}.json"
+    file_path = f"results/job_{job_id}.json"
     if not os.path.exists(file_path):
         # The result is not done yet
         return jsonify({"status": "running"})
@@ -94,39 +93,39 @@ def get_response(job_id):
 
 @webserver.route('/api/states_mean', methods=['POST'])
 def states_mean_request():
-    return register_job("states_mean")
+    return register_job(request.json, "states_mean")
 
 @webserver.route('/api/state_mean', methods=['POST'])
 def state_mean_request():
-    return register_job("state_mean")
+    return register_job(request.json, "state_mean")
 
 @webserver.route('/api/best5', methods=['POST'])
 def best5_request():
-    return register_job("best5")
+    return register_job(request.json, "best5")
 
 @webserver.route('/api/worst5', methods=['POST'])
 def worst5_request():
-    return register_job("worst5")
+    return register_job(request.json, "worst5")
 
 @webserver.route('/api/global_mean', methods=['POST'])
 def global_mean_request():
-    return register_job("global_mean")
+    return register_job(request.json, "global_mean")
 
 @webserver.route('/api/diff_from_mean', methods=['POST'])
 def diff_from_mean_request():
-    return register_job("diff_from_mean")
+    return register_job(request.json, "diff_from_mean")
 
 @webserver.route('/api/state_diff_from_mean', methods=['POST'])
 def state_diff_from_mean_request():
-    return register_job("state_diff_from_mean")
+    return register_job(request.json, "state_diff_from_mean")
 
 @webserver.route('/api/mean_by_category', methods=['POST'])
 def mean_by_category_request():
-    return register_job("mean_by_category")
+    return register_job(request.json, "mean_by_category")
 
 @webserver.route('/api/state_mean_by_category', methods=['POST'])
 def state_mean_by_category_request():
-    return register_job("state_mean_by_category")
+    return register_job(request.json, "state_mean_by_category")
 
 # You can check localhost in your browser to see what this displays
 @webserver.route('/')

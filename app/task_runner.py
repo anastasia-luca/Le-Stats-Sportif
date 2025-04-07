@@ -6,7 +6,7 @@ from app.barrier import SimpleBarrier
 from app.data_ingestor import DataIngestor
 
 class ThreadPool:
-    def __init__(self, data_ingestor: DataIngestor):
+    def __init__(self):
         env_num_threads = os.environ.get("TP_NUM_OF_THREADS")
         sys_threads = os.cpu_count() or 1 # if returns None, use at least 1 thread
         if env_num_threads is not None:
@@ -38,11 +38,13 @@ class TaskRunner(Thread):
         self.queue: Queue = queue
         self.shutdown: Event = shutdown
         self.barrier: SimpleBarrier = barrier
-        self.data_ingestor: DataIngestor = data_ingestor
+        # self.data_ingestor: DataIngestor = data_ingestor
 
     def run(self):
         # Wait until csv is processed
         self.barrier.wait()
+        from app import webserver
+        self.data_ingestor = webserver.data_ingestor
 
         while True:
             # Get pending job
@@ -50,7 +52,10 @@ class TaskRunner(Thread):
             job_id = job["id"]
             job_type = job["type"]
             job_question = job["data"]["question"]
-            job_state = job["data"]["state"]
+            try:
+                job_state = job["data"]["state"]
+            except:
+                pass
             
             if job_type == "states_mean":
                 result = self.data_ingestor.states_mean(job_question)
