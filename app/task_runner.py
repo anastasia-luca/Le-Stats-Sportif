@@ -9,16 +9,7 @@ class ThreadPool:
     ''' Class for managing threads '''
     def __init__(self):
         ''' Initialize ThreadPool instance '''
-        env_num_threads = os.environ.get("TP_NUM_OF_THREADS")
-        sys_threads = os.cpu_count() or 1 # if returns None, use at least 1 thread
-        if env_num_threads is not None:
-            try:
-                num_threads = int(env_num_threads)
-            except ValueError: # Cannot convert string to integer
-                num_threads = sys_threads
-        else:
-            num_threads = sys_threads
-        self.num_threads = min(num_threads, sys_threads) # hardware limit
+        self.num_threads = self.get_num_threads()
         self.queue = Queue()
         self.shutdown = False
         self.barrier = SimpleBarrier(self.num_threads + 1)
@@ -30,9 +21,19 @@ class ThreadPool:
             thread = TaskRunner(self.queue, self.shutdown, self.barrier, self.lst_done_jobs)
             thread.start()
 
-    def __len__(self):
+    def get_num_threads(self):
         ''' Return the number of threads '''
-        return self.num_threads
+        env_num_threads = os.environ.get("TP_NUM_OF_THREADS")
+        sys_threads = os.cpu_count() or 1 # if returns None, use at least 1 thread
+        if env_num_threads is not None:
+            try:
+                num_threads = int(env_num_threads)
+            except ValueError: # Cannot convert string to integer
+                num_threads = sys_threads
+        else:
+            num_threads = sys_threads
+        num_threads = min(num_threads, sys_threads) # hardware limit
+        return num_threads
 
 class TaskRunner(Thread):
     ''' Thread that process a job from queue '''

@@ -5,6 +5,7 @@ from app import webserver
 
 def register_job(data, request_type):
     ''' Register a new job and add it to the queue '''
+    webserver.logger.info("Entered /api/%s", request_type)
     if webserver.task_runner.shutdown is True:
         return jsonify({
             "status": "error",
@@ -22,6 +23,7 @@ def register_job(data, request_type):
     }
     # Put the job in queue
     webserver.task_runner.queue.put(job)
+    webserver.logger.info("Exiting with job_id_%d from /api/%s", job_id, request_type)
     # Return associated job_id
     return jsonify({"job_id": job_id})
 
