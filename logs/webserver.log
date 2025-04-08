@@ -227,3 +227,499 @@
 2025-04-07 19:05:49,922 - INFO - Exiting with job_id_113 from /api/worst5
 2025-04-07 19:05:49,936 - INFO - Entered /api/worst5
 2025-04-07 19:05:49,937 - INFO - Exiting with job_id_114 from /api/worst5
+2025-04-08 05:36:34,461 - INFO - The app has started!
+2025-04-08 05:36:51,518 - INFO - Entered /api/best5
+2025-04-08 05:36:51,519 - INFO - Exiting with job_id_1 from /api/best5
+2025-04-08 05:36:51,851 - INFO - Entered /api/best5
+2025-04-08 05:36:51,852 - INFO - Exiting with job_id_2 from /api/best5
+2025-04-08 05:36:52,130 - INFO - Entered /api/best5
+2025-04-08 05:36:52,131 - INFO - Exiting with job_id_3 from /api/best5
+2025-04-08 05:36:52,420 - INFO - Entered /api/best5
+2025-04-08 05:36:52,421 - INFO - Exiting with job_id_4 from /api/best5
+2025-04-08 05:36:52,715 - INFO - Entered /api/best5
+2025-04-08 05:36:52,716 - INFO - Exiting with job_id_5 from /api/best5
+2025-04-08 05:36:53,013 - INFO - Entered /api/best5
+2025-04-08 05:36:53,014 - INFO - Exiting with job_id_6 from /api/best5
+2025-04-08 05:36:53,304 - INFO - Entered /api/best5
+2025-04-08 05:36:53,305 - INFO - Exiting with job_id_7 from /api/best5
+2025-04-08 05:36:53,570 - INFO - Entered /api/best5
+2025-04-08 05:36:53,571 - INFO - Exiting with job_id_8 from /api/best5
+2025-04-08 05:36:53,854 - INFO - Entered /api/best5
+2025-04-08 05:36:53,855 - INFO - Exiting with job_id_9 from /api/best5
+2025-04-08 05:37:12,720 - INFO - Entered /api/diff_from_mean
+2025-04-08 05:37:12,721 - INFO - Exiting with job_id_10 from /api/diff_from_mean
+2025-04-08 05:37:13,001 - INFO - Entered /api/diff_from_mean
+2025-04-08 05:37:13,002 - INFO - Exiting with job_id_11 from /api/diff_from_mean
+2025-04-08 05:37:13,276 - INFO - Entered /api/diff_from_mean
+2025-04-08 05:37:13,277 - INFO - Exiting with job_id_12 from /api/diff_from_mean
+2025-04-08 05:37:13,556 - INFO - Entered /api/diff_from_mean
+2025-04-08 05:37:13,557 - INFO - Exiting with job_id_13 from /api/diff_from_mean
+2025-04-08 05:37:13,860 - INFO - Entered /api/diff_from_mean
+2025-04-08 05:37:13,861 - INFO - Exiting with job_id_14 from /api/diff_from_mean
+2025-04-08 05:37:14,126 - INFO - Entered /api/diff_from_mean
+2025-04-08 05:37:14,127 - INFO - Exiting with job_id_15 from /api/diff_from_mean
+2025-04-08 05:37:14,409 - INFO - Entered /api/diff_from_mean
+2025-04-08 05:37:14,410 - INFO - Exiting with job_id_16 from /api/diff_from_mean
+2025-04-08 05:37:14,695 - INFO - Entered /api/diff_from_mean
+2025-04-08 05:37:14,696 - INFO - Exiting with job_id_17 from /api/diff_from_mean
+2025-04-08 05:37:15,000 - INFO - Entered /api/diff_from_mean
+2025-04-08 05:37:15,001 - INFO - Exiting with job_id_18 from /api/diff_from_mean
+2025-04-08 05:37:15,286 - INFO - Entered /api/global_mean
+2025-04-08 05:37:15,286 - INFO - Exiting with job_id_19 from /api/global_mean
+2025-04-08 05:37:15,552 - INFO - Entered /api/global_mean
+2025-04-08 05:37:15,553 - INFO - Exiting with job_id_20 from /api/global_mean
+2025-04-08 05:37:15,831 - INFO - Entered /api/global_mean
+2025-04-08 05:37:15,831 - INFO - Exiting with job_id_21 from /api/global_mean
+2025-04-08 05:37:16,100 - INFO - Entered /api/global_mean
+2025-04-08 05:37:16,101 - INFO - Exiting with job_id_22 from /api/global_mean
+2025-04-08 05:37:16,158 - INFO - Entered /api/global_mean
+2025-04-08 05:37:16,159 - INFO - Exiting with job_id_23 from /api/global_mean
+2025-04-08 05:37:16,426 - INFO - Entered /api/global_mean
+2025-04-08 05:37:16,427 - INFO - Exiting with job_id_24 from /api/global_mean
+2025-04-08 05:37:16,694 - INFO - Entered /api/global_mean
+2025-04-08 05:37:16,695 - INFO - Exiting with job_id_25 from /api/global_mean
+2025-04-08 05:37:16,965 - INFO - Entered /api/global_mean
+2025-04-08 05:37:16,965 - INFO - Exiting with job_id_26 from /api/global_mean
+2025-04-08 05:37:17,241 - INFO - Entered /api/global_mean
+2025-04-08 05:37:17,242 - INFO - Exiting with job_id_27 from /api/global_mean
+2025-04-08 05:37:17,336 - INFO - Entered /api/mean_by_category
+2025-04-08 05:37:17,337 - INFO - Exiting with job_id_28 from /api/mean_by_category
+2025-04-08 05:37:17,694 - INFO - Entered /api/mean_by_category
+2025-04-08 05:37:17,694 - INFO - Exiting with job_id_29 from /api/mean_by_category
+2025-04-08 05:37:18,053 - INFO - Entered /api/mean_by_category
+2025-04-08 05:37:18,054 - INFO - Exiting with job_id_30 from /api/mean_by_category
+2025-04-08 05:37:18,364 - INFO - Entered /api/mean_by_category
+2025-04-08 05:37:18,366 - INFO - Exiting with job_id_31 from /api/mean_by_category
+2025-04-08 05:37:18,681 - INFO - Entered /api/mean_by_category
+2025-04-08 05:37:18,682 - INFO - Exiting with job_id_32 from /api/mean_by_category
+2025-04-08 05:37:19,006 - INFO - Entered /api/mean_by_category
+2025-04-08 05:37:19,007 - INFO - Exiting with job_id_33 from /api/mean_by_category
+2025-04-08 05:37:19,305 - INFO - Entered /api/mean_by_category
+2025-04-08 05:37:19,306 - INFO - Exiting with job_id_34 from /api/mean_by_category
+2025-04-08 05:37:19,642 - INFO - Entered /api/mean_by_category
+2025-04-08 05:37:19,643 - INFO - Exiting with job_id_35 from /api/mean_by_category
+2025-04-08 05:37:19,964 - INFO - Entered /api/mean_by_category
+2025-04-08 05:37:19,965 - INFO - Exiting with job_id_36 from /api/mean_by_category
+2025-04-08 05:37:20,303 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:20,304 - INFO - Exiting with job_id_37 from /api/state_diff_from_mean
+2025-04-08 05:37:20,599 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:20,600 - INFO - Exiting with job_id_38 from /api/state_diff_from_mean
+2025-04-08 05:37:20,900 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:20,901 - INFO - Exiting with job_id_39 from /api/state_diff_from_mean
+2025-04-08 05:37:21,187 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:21,188 - INFO - Exiting with job_id_40 from /api/state_diff_from_mean
+2025-04-08 05:37:21,482 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:21,483 - INFO - Exiting with job_id_41 from /api/state_diff_from_mean
+2025-04-08 05:37:21,775 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:21,776 - INFO - Exiting with job_id_42 from /api/state_diff_from_mean
+2025-04-08 05:37:22,069 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:22,070 - INFO - Exiting with job_id_43 from /api/state_diff_from_mean
+2025-04-08 05:37:22,364 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:22,365 - INFO - Exiting with job_id_44 from /api/state_diff_from_mean
+2025-04-08 05:37:22,657 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:22,658 - INFO - Exiting with job_id_45 from /api/state_diff_from_mean
+2025-04-08 05:37:22,953 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:22,954 - INFO - Exiting with job_id_46 from /api/state_diff_from_mean
+2025-04-08 05:37:23,253 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:23,254 - INFO - Exiting with job_id_47 from /api/state_diff_from_mean
+2025-04-08 05:37:23,552 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:23,553 - INFO - Exiting with job_id_48 from /api/state_diff_from_mean
+2025-04-08 05:37:23,844 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:23,845 - INFO - Exiting with job_id_49 from /api/state_diff_from_mean
+2025-04-08 05:37:24,137 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:24,138 - INFO - Exiting with job_id_50 from /api/state_diff_from_mean
+2025-04-08 05:37:24,441 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:24,442 - INFO - Exiting with job_id_51 from /api/state_diff_from_mean
+2025-04-08 05:37:24,738 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:24,739 - INFO - Exiting with job_id_52 from /api/state_diff_from_mean
+2025-04-08 05:37:25,000 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:25,001 - INFO - Exiting with job_id_53 from /api/state_diff_from_mean
+2025-04-08 05:37:25,048 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:25,048 - INFO - Exiting with job_id_54 from /api/state_diff_from_mean
+2025-04-08 05:37:25,301 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:25,303 - INFO - Exiting with job_id_55 from /api/state_diff_from_mean
+2025-04-08 05:37:25,559 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 05:37:25,560 - INFO - Exiting with job_id_56 from /api/state_diff_from_mean
+2025-04-08 05:37:25,867 - INFO - Entered /api/state_mean
+2025-04-08 05:37:25,868 - INFO - Exiting with job_id_57 from /api/state_mean
+2025-04-08 05:37:26,148 - INFO - Entered /api/state_mean
+2025-04-08 05:37:26,149 - INFO - Exiting with job_id_58 from /api/state_mean
+2025-04-08 05:37:26,432 - INFO - Entered /api/state_mean
+2025-04-08 05:37:26,433 - INFO - Exiting with job_id_59 from /api/state_mean
+2025-04-08 05:37:26,728 - INFO - Entered /api/state_mean
+2025-04-08 05:37:26,729 - INFO - Exiting with job_id_60 from /api/state_mean
+2025-04-08 05:37:27,010 - INFO - Entered /api/state_mean
+2025-04-08 05:37:27,010 - INFO - Exiting with job_id_61 from /api/state_mean
+2025-04-08 05:37:27,300 - INFO - Entered /api/state_mean
+2025-04-08 05:37:27,302 - INFO - Exiting with job_id_62 from /api/state_mean
+2025-04-08 05:37:27,396 - INFO - Entered /api/state_mean
+2025-04-08 05:37:27,397 - INFO - Exiting with job_id_63 from /api/state_mean
+2025-04-08 05:37:27,682 - INFO - Entered /api/state_mean
+2025-04-08 05:37:27,683 - INFO - Exiting with job_id_64 from /api/state_mean
+2025-04-08 05:37:27,973 - INFO - Entered /api/state_mean
+2025-04-08 05:37:27,974 - INFO - Exiting with job_id_65 from /api/state_mean
+2025-04-08 05:37:28,245 - INFO - Entered /api/state_mean
+2025-04-08 05:37:28,246 - INFO - Exiting with job_id_66 from /api/state_mean
+2025-04-08 05:37:28,533 - INFO - Entered /api/state_mean
+2025-04-08 05:37:28,534 - INFO - Exiting with job_id_67 from /api/state_mean
+2025-04-08 05:37:28,826 - INFO - Entered /api/state_mean
+2025-04-08 05:37:28,827 - INFO - Exiting with job_id_68 from /api/state_mean
+2025-04-08 05:37:29,117 - INFO - Entered /api/state_mean
+2025-04-08 05:37:29,118 - INFO - Exiting with job_id_69 from /api/state_mean
+2025-04-08 05:37:29,405 - INFO - Entered /api/state_mean
+2025-04-08 05:37:29,406 - INFO - Exiting with job_id_70 from /api/state_mean
+2025-04-08 05:37:29,500 - INFO - Entered /api/state_mean
+2025-04-08 05:37:29,500 - INFO - Exiting with job_id_71 from /api/state_mean
+2025-04-08 05:37:29,597 - INFO - Entered /api/state_mean
+2025-04-08 05:37:29,598 - INFO - Exiting with job_id_72 from /api/state_mean
+2025-04-08 05:37:29,885 - INFO - Entered /api/state_mean
+2025-04-08 05:37:29,885 - INFO - Exiting with job_id_73 from /api/state_mean
+2025-04-08 05:37:30,167 - INFO - Entered /api/state_mean
+2025-04-08 05:37:30,168 - INFO - Exiting with job_id_74 from /api/state_mean
+2025-04-08 05:37:30,457 - INFO - Entered /api/state_mean
+2025-04-08 05:37:30,458 - INFO - Exiting with job_id_75 from /api/state_mean
+2025-04-08 05:37:30,744 - INFO - Entered /api/state_mean
+2025-04-08 05:37:30,745 - INFO - Exiting with job_id_76 from /api/state_mean
+2025-04-08 05:37:30,828 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:30,829 - INFO - Exiting with job_id_77 from /api/state_mean_by_category
+2025-04-08 05:37:30,927 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:30,928 - INFO - Exiting with job_id_78 from /api/state_mean_by_category
+2025-04-08 05:37:31,219 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:31,220 - INFO - Exiting with job_id_79 from /api/state_mean_by_category
+2025-04-08 05:37:31,521 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:31,523 - INFO - Exiting with job_id_80 from /api/state_mean_by_category
+2025-04-08 05:37:31,782 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:31,783 - INFO - Exiting with job_id_81 from /api/state_mean_by_category
+2025-04-08 05:37:32,086 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:32,087 - INFO - Exiting with job_id_82 from /api/state_mean_by_category
+2025-04-08 05:37:32,382 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:32,382 - INFO - Exiting with job_id_83 from /api/state_mean_by_category
+2025-04-08 05:37:32,484 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:32,485 - INFO - Exiting with job_id_84 from /api/state_mean_by_category
+2025-04-08 05:37:32,784 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:32,785 - INFO - Exiting with job_id_85 from /api/state_mean_by_category
+2025-04-08 05:37:32,864 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:32,865 - INFO - Exiting with job_id_86 from /api/state_mean_by_category
+2025-04-08 05:37:33,122 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:33,123 - INFO - Exiting with job_id_87 from /api/state_mean_by_category
+2025-04-08 05:37:33,380 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:33,381 - INFO - Exiting with job_id_88 from /api/state_mean_by_category
+2025-04-08 05:37:33,675 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:33,676 - INFO - Exiting with job_id_89 from /api/state_mean_by_category
+2025-04-08 05:37:33,928 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:33,929 - INFO - Exiting with job_id_90 from /api/state_mean_by_category
+2025-04-08 05:37:34,186 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:34,187 - INFO - Exiting with job_id_91 from /api/state_mean_by_category
+2025-04-08 05:37:34,449 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:34,450 - INFO - Exiting with job_id_92 from /api/state_mean_by_category
+2025-04-08 05:37:34,708 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:34,709 - INFO - Exiting with job_id_93 from /api/state_mean_by_category
+2025-04-08 05:37:34,955 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:34,956 - INFO - Exiting with job_id_94 from /api/state_mean_by_category
+2025-04-08 05:37:35,213 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:35,214 - INFO - Exiting with job_id_95 from /api/state_mean_by_category
+2025-04-08 05:37:35,509 - INFO - Entered /api/state_mean_by_category
+2025-04-08 05:37:35,509 - INFO - Exiting with job_id_96 from /api/state_mean_by_category
+2025-04-08 05:37:35,560 - INFO - Entered /api/states_mean
+2025-04-08 05:37:35,560 - INFO - Exiting with job_id_97 from /api/states_mean
+2025-04-08 05:37:35,808 - INFO - Entered /api/states_mean
+2025-04-08 05:37:35,809 - INFO - Exiting with job_id_98 from /api/states_mean
+2025-04-08 05:37:36,070 - INFO - Entered /api/states_mean
+2025-04-08 05:37:36,071 - INFO - Exiting with job_id_99 from /api/states_mean
+2025-04-08 05:37:36,353 - INFO - Entered /api/states_mean
+2025-04-08 05:37:36,354 - INFO - Exiting with job_id_100 from /api/states_mean
+2025-04-08 05:37:36,625 - INFO - Entered /api/states_mean
+2025-04-08 05:37:36,626 - INFO - Exiting with job_id_101 from /api/states_mean
+2025-04-08 05:37:36,905 - INFO - Entered /api/states_mean
+2025-04-08 05:37:36,906 - INFO - Exiting with job_id_102 from /api/states_mean
+2025-04-08 05:37:37,166 - INFO - Entered /api/states_mean
+2025-04-08 05:37:37,166 - INFO - Exiting with job_id_103 from /api/states_mean
+2025-04-08 05:37:37,444 - INFO - Entered /api/states_mean
+2025-04-08 05:37:37,445 - INFO - Exiting with job_id_104 from /api/states_mean
+2025-04-08 05:37:37,724 - INFO - Entered /api/states_mean
+2025-04-08 05:37:37,725 - INFO - Exiting with job_id_105 from /api/states_mean
+2025-04-08 05:37:38,012 - INFO - Entered /api/worst5
+2025-04-08 05:37:38,013 - INFO - Exiting with job_id_106 from /api/worst5
+2025-04-08 05:37:38,278 - INFO - Entered /api/worst5
+2025-04-08 05:37:38,279 - INFO - Exiting with job_id_107 from /api/worst5
+2025-04-08 05:37:38,555 - INFO - Entered /api/worst5
+2025-04-08 05:37:38,556 - INFO - Exiting with job_id_108 from /api/worst5
+2025-04-08 05:37:38,833 - INFO - Entered /api/worst5
+2025-04-08 05:37:38,834 - INFO - Exiting with job_id_109 from /api/worst5
+2025-04-08 05:37:39,089 - INFO - Entered /api/worst5
+2025-04-08 05:37:39,089 - INFO - Exiting with job_id_110 from /api/worst5
+2025-04-08 05:37:39,137 - INFO - Entered /api/worst5
+2025-04-08 05:37:39,138 - INFO - Exiting with job_id_111 from /api/worst5
+2025-04-08 05:37:39,387 - INFO - Entered /api/worst5
+2025-04-08 05:37:39,388 - INFO - Exiting with job_id_112 from /api/worst5
+2025-04-08 05:37:39,660 - INFO - Entered /api/worst5
+2025-04-08 05:37:39,661 - INFO - Exiting with job_id_113 from /api/worst5
+2025-04-08 05:37:39,937 - INFO - Entered /api/worst5
+2025-04-08 05:37:39,938 - INFO - Exiting with job_id_114 from /api/worst5
+2025-04-08 06:07:25,834 - INFO - The app has started!
+2025-04-08 06:16:10,902 - INFO - The app has started!
+2025-04-08 06:17:06,949 - INFO - The app has started!
+2025-04-08 06:24:54,181 - INFO - The app has started!
+2025-04-08 06:26:50,436 - INFO - The app has started!
+2025-04-08 06:33:27,142 - INFO - The app has started!
+2025-04-08 06:34:41,974 - INFO - The app has started!
+2025-04-08 06:35:15,289 - INFO - The app has started!
+2025-04-08 06:36:28,280 - INFO - The app has started!
+2025-04-08 06:40:56,446 - INFO - The app has started!
+2025-04-08 07:11:05,685 - INFO - The app has started!
+2025-04-08 07:11:55,240 - INFO - The app has started!
+2025-04-08 07:12:17,944 - INFO - The app has started!
+2025-04-08 07:22:06,757 - INFO - The app has started!
+2025-04-08 07:22:33,902 - INFO - The app has started!
+2025-04-08 07:25:59,697 - INFO - The app has started!
+2025-04-08 07:26:10,001 - INFO - The app has started!
+2025-04-08 07:27:58,456 - INFO - The app has started!
+2025-04-08 07:29:47,700 - INFO - The app has started!
+2025-04-08 07:30:33,280 - INFO - The app has started!
+2025-04-08 07:31:54,681 - INFO - The app has started!
+2025-04-08 07:33:54,898 - INFO - The app has started!
+2025-04-08 07:41:21,975 - INFO - The app has started!
+2025-04-08 07:43:48,632 - INFO - The app has started!
+2025-04-08 07:45:20,169 - INFO - The app has started!
+2025-04-08 07:46:10,511 - INFO - The app has started!
+2025-04-08 07:46:43,450 - INFO - The app has started!
+2025-04-08 07:48:07,488 - INFO - The app has started!
+2025-04-08 07:49:05,688 - INFO - The app has started!
+2025-04-08 07:50:50,337 - INFO - The app has started!
+2025-04-08 07:51:33,261 - INFO - The app has started!
+2025-04-08 07:51:58,762 - INFO - The app has started!
+2025-04-08 07:52:58,386 - INFO - The app has started!
+2025-04-08 07:54:49,744 - INFO - The app has started!
+2025-04-08 07:56:30,493 - INFO - The app has started!
+2025-04-08 07:56:39,471 - INFO - The app has started!
+2025-04-08 07:57:47,431 - INFO - The app has started!
+2025-04-08 07:58:46,795 - INFO - The app has started!
+2025-04-08 07:59:03,778 - INFO - The app has started!
+2025-04-08 07:59:19,070 - INFO - Entered /api/best5
+2025-04-08 07:59:19,071 - INFO - Exiting with job_id_1 from /api/best5
+2025-04-08 07:59:19,340 - INFO - Entered /api/best5
+2025-04-08 07:59:19,341 - INFO - Exiting with job_id_2 from /api/best5
+2025-04-08 07:59:19,568 - INFO - Entered /api/best5
+2025-04-08 07:59:19,568 - INFO - Exiting with job_id_3 from /api/best5
+2025-04-08 07:59:19,583 - INFO - Entered /api/best5
+2025-04-08 07:59:19,583 - INFO - Exiting with job_id_4 from /api/best5
+2025-04-08 07:59:19,808 - INFO - Entered /api/best5
+2025-04-08 07:59:19,808 - INFO - Exiting with job_id_5 from /api/best5
+2025-04-08 07:59:20,029 - INFO - Entered /api/best5
+2025-04-08 07:59:20,029 - INFO - Exiting with job_id_6 from /api/best5
+2025-04-08 07:59:20,252 - INFO - Entered /api/best5
+2025-04-08 07:59:20,253 - INFO - Exiting with job_id_7 from /api/best5
+2025-04-08 07:59:20,477 - INFO - Entered /api/best5
+2025-04-08 07:59:20,477 - INFO - Exiting with job_id_8 from /api/best5
+2025-04-08 07:59:20,705 - INFO - Entered /api/best5
+2025-04-08 07:59:20,706 - INFO - Exiting with job_id_9 from /api/best5
+2025-04-08 07:59:29,982 - INFO - Entered /api/diff_from_mean
+2025-04-08 07:59:29,983 - INFO - Exiting with job_id_10 from /api/diff_from_mean
+2025-04-08 07:59:30,207 - INFO - Entered /api/diff_from_mean
+2025-04-08 07:59:30,208 - INFO - Exiting with job_id_11 from /api/diff_from_mean
+2025-04-08 07:59:30,228 - INFO - Entered /api/diff_from_mean
+2025-04-08 07:59:30,228 - INFO - Exiting with job_id_12 from /api/diff_from_mean
+2025-04-08 07:59:30,452 - INFO - Entered /api/diff_from_mean
+2025-04-08 07:59:30,453 - INFO - Exiting with job_id_13 from /api/diff_from_mean
+2025-04-08 07:59:30,678 - INFO - Entered /api/diff_from_mean
+2025-04-08 07:59:30,678 - INFO - Exiting with job_id_14 from /api/diff_from_mean
+2025-04-08 07:59:30,901 - INFO - Entered /api/diff_from_mean
+2025-04-08 07:59:30,901 - INFO - Exiting with job_id_15 from /api/diff_from_mean
+2025-04-08 07:59:30,921 - INFO - Entered /api/diff_from_mean
+2025-04-08 07:59:30,921 - INFO - Exiting with job_id_16 from /api/diff_from_mean
+2025-04-08 07:59:31,149 - INFO - Entered /api/diff_from_mean
+2025-04-08 07:59:31,150 - INFO - Exiting with job_id_17 from /api/diff_from_mean
+2025-04-08 07:59:31,378 - INFO - Entered /api/diff_from_mean
+2025-04-08 07:59:31,379 - INFO - Exiting with job_id_18 from /api/diff_from_mean
+2025-04-08 07:59:31,605 - INFO - Entered /api/global_mean
+2025-04-08 07:59:31,605 - INFO - Exiting with job_id_19 from /api/global_mean
+2025-04-08 07:59:31,837 - INFO - Entered /api/global_mean
+2025-04-08 07:59:31,837 - INFO - Exiting with job_id_20 from /api/global_mean
+2025-04-08 07:59:32,060 - INFO - Entered /api/global_mean
+2025-04-08 07:59:32,060 - INFO - Exiting with job_id_21 from /api/global_mean
+2025-04-08 07:59:32,288 - INFO - Entered /api/global_mean
+2025-04-08 07:59:32,288 - INFO - Exiting with job_id_22 from /api/global_mean
+2025-04-08 07:59:32,528 - INFO - Entered /api/global_mean
+2025-04-08 07:59:32,529 - INFO - Exiting with job_id_23 from /api/global_mean
+2025-04-08 07:59:32,542 - INFO - Entered /api/global_mean
+2025-04-08 07:59:32,543 - INFO - Exiting with job_id_24 from /api/global_mean
+2025-04-08 07:59:32,763 - INFO - Entered /api/global_mean
+2025-04-08 07:59:32,764 - INFO - Exiting with job_id_25 from /api/global_mean
+2025-04-08 07:59:32,985 - INFO - Entered /api/global_mean
+2025-04-08 07:59:32,986 - INFO - Exiting with job_id_26 from /api/global_mean
+2025-04-08 07:59:33,220 - INFO - Entered /api/global_mean
+2025-04-08 07:59:33,221 - INFO - Exiting with job_id_27 from /api/global_mean
+2025-04-08 07:59:33,446 - INFO - Entered /api/mean_by_category
+2025-04-08 07:59:33,447 - INFO - Exiting with job_id_28 from /api/mean_by_category
+2025-04-08 07:59:33,712 - INFO - Entered /api/mean_by_category
+2025-04-08 07:59:33,713 - INFO - Exiting with job_id_29 from /api/mean_by_category
+2025-04-08 07:59:33,966 - INFO - Entered /api/mean_by_category
+2025-04-08 07:59:33,966 - INFO - Exiting with job_id_30 from /api/mean_by_category
+2025-04-08 07:59:34,206 - INFO - Entered /api/mean_by_category
+2025-04-08 07:59:34,207 - INFO - Exiting with job_id_31 from /api/mean_by_category
+2025-04-08 07:59:34,448 - INFO - Entered /api/mean_by_category
+2025-04-08 07:59:34,448 - INFO - Exiting with job_id_32 from /api/mean_by_category
+2025-04-08 07:59:34,690 - INFO - Entered /api/mean_by_category
+2025-04-08 07:59:34,691 - INFO - Exiting with job_id_33 from /api/mean_by_category
+2025-04-08 07:59:34,932 - INFO - Entered /api/mean_by_category
+2025-04-08 07:59:34,933 - INFO - Exiting with job_id_34 from /api/mean_by_category
+2025-04-08 07:59:35,176 - INFO - Entered /api/mean_by_category
+2025-04-08 07:59:35,176 - INFO - Exiting with job_id_35 from /api/mean_by_category
+2025-04-08 07:59:35,412 - INFO - Entered /api/mean_by_category
+2025-04-08 07:59:35,412 - INFO - Exiting with job_id_36 from /api/mean_by_category
+2025-04-08 07:59:35,649 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:35,649 - INFO - Exiting with job_id_37 from /api/state_diff_from_mean
+2025-04-08 07:59:35,872 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:35,873 - INFO - Exiting with job_id_38 from /api/state_diff_from_mean
+2025-04-08 07:59:36,103 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:36,103 - INFO - Exiting with job_id_39 from /api/state_diff_from_mean
+2025-04-08 07:59:36,120 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:36,120 - INFO - Exiting with job_id_40 from /api/state_diff_from_mean
+2025-04-08 07:59:36,347 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:36,348 - INFO - Exiting with job_id_41 from /api/state_diff_from_mean
+2025-04-08 07:59:36,573 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:36,573 - INFO - Exiting with job_id_42 from /api/state_diff_from_mean
+2025-04-08 07:59:36,797 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:36,798 - INFO - Exiting with job_id_43 from /api/state_diff_from_mean
+2025-04-08 07:59:37,017 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:37,017 - INFO - Exiting with job_id_44 from /api/state_diff_from_mean
+2025-04-08 07:59:37,243 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:37,243 - INFO - Exiting with job_id_45 from /api/state_diff_from_mean
+2025-04-08 07:59:37,470 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:37,471 - INFO - Exiting with job_id_46 from /api/state_diff_from_mean
+2025-04-08 07:59:37,694 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:37,695 - INFO - Exiting with job_id_47 from /api/state_diff_from_mean
+2025-04-08 07:59:37,713 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:37,713 - INFO - Exiting with job_id_48 from /api/state_diff_from_mean
+2025-04-08 07:59:37,934 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:37,934 - INFO - Exiting with job_id_49 from /api/state_diff_from_mean
+2025-04-08 07:59:38,158 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:38,159 - INFO - Exiting with job_id_50 from /api/state_diff_from_mean
+2025-04-08 07:59:38,392 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:38,392 - INFO - Exiting with job_id_51 from /api/state_diff_from_mean
+2025-04-08 07:59:38,408 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:38,408 - INFO - Exiting with job_id_52 from /api/state_diff_from_mean
+2025-04-08 07:59:38,626 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:38,627 - INFO - Exiting with job_id_53 from /api/state_diff_from_mean
+2025-04-08 07:59:38,642 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:38,643 - INFO - Exiting with job_id_54 from /api/state_diff_from_mean
+2025-04-08 07:59:38,874 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:38,874 - INFO - Exiting with job_id_55 from /api/state_diff_from_mean
+2025-04-08 07:59:38,891 - INFO - Entered /api/state_diff_from_mean
+2025-04-08 07:59:38,891 - INFO - Exiting with job_id_56 from /api/state_diff_from_mean
+2025-04-08 07:59:39,125 - INFO - Entered /api/state_mean
+2025-04-08 07:59:39,125 - INFO - Exiting with job_id_57 from /api/state_mean
+2025-04-08 07:59:39,358 - INFO - Entered /api/state_mean
+2025-04-08 07:59:39,359 - INFO - Exiting with job_id_58 from /api/state_mean
+2025-04-08 07:59:39,373 - INFO - Entered /api/state_mean
+2025-04-08 07:59:39,373 - INFO - Exiting with job_id_59 from /api/state_mean
+2025-04-08 07:59:39,601 - INFO - Entered /api/state_mean
+2025-04-08 07:59:39,601 - INFO - Exiting with job_id_60 from /api/state_mean
+2025-04-08 07:59:39,824 - INFO - Entered /api/state_mean
+2025-04-08 07:59:39,825 - INFO - Exiting with job_id_61 from /api/state_mean
+2025-04-08 07:59:40,059 - INFO - Entered /api/state_mean
+2025-04-08 07:59:40,059 - INFO - Exiting with job_id_62 from /api/state_mean
+2025-04-08 07:59:40,279 - INFO - Entered /api/state_mean
+2025-04-08 07:59:40,280 - INFO - Exiting with job_id_63 from /api/state_mean
+2025-04-08 07:59:40,296 - INFO - Entered /api/state_mean
+2025-04-08 07:59:40,297 - INFO - Exiting with job_id_64 from /api/state_mean
+2025-04-08 07:59:40,515 - INFO - Entered /api/state_mean
+2025-04-08 07:59:40,516 - INFO - Exiting with job_id_65 from /api/state_mean
+2025-04-08 07:59:40,735 - INFO - Entered /api/state_mean
+2025-04-08 07:59:40,736 - INFO - Exiting with job_id_66 from /api/state_mean
+2025-04-08 07:59:40,961 - INFO - Entered /api/state_mean
+2025-04-08 07:59:40,962 - INFO - Exiting with job_id_67 from /api/state_mean
+2025-04-08 07:59:41,183 - INFO - Entered /api/state_mean
+2025-04-08 07:59:41,184 - INFO - Exiting with job_id_68 from /api/state_mean
+2025-04-08 07:59:41,415 - INFO - Entered /api/state_mean
+2025-04-08 07:59:41,415 - INFO - Exiting with job_id_69 from /api/state_mean
+2025-04-08 07:59:41,641 - INFO - Entered /api/state_mean
+2025-04-08 07:59:41,641 - INFO - Exiting with job_id_70 from /api/state_mean
+2025-04-08 07:59:41,864 - INFO - Entered /api/state_mean
+2025-04-08 07:59:41,864 - INFO - Exiting with job_id_71 from /api/state_mean
+2025-04-08 07:59:41,879 - INFO - Entered /api/state_mean
+2025-04-08 07:59:41,879 - INFO - Exiting with job_id_72 from /api/state_mean
+2025-04-08 07:59:42,101 - INFO - Entered /api/state_mean
+2025-04-08 07:59:42,102 - INFO - Exiting with job_id_73 from /api/state_mean
+2025-04-08 07:59:42,339 - INFO - Entered /api/state_mean
+2025-04-08 07:59:42,340 - INFO - Exiting with job_id_74 from /api/state_mean
+2025-04-08 07:59:42,567 - INFO - Entered /api/state_mean
+2025-04-08 07:59:42,567 - INFO - Exiting with job_id_75 from /api/state_mean
+2025-04-08 07:59:42,588 - INFO - Entered /api/state_mean
+2025-04-08 07:59:42,589 - INFO - Exiting with job_id_76 from /api/state_mean
+2025-04-08 07:59:42,819 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:42,819 - INFO - Exiting with job_id_77 from /api/state_mean_by_category
+2025-04-08 07:59:43,059 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:43,059 - INFO - Exiting with job_id_78 from /api/state_mean_by_category
+2025-04-08 07:59:43,293 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:43,293 - INFO - Exiting with job_id_79 from /api/state_mean_by_category
+2025-04-08 07:59:43,518 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:43,519 - INFO - Exiting with job_id_80 from /api/state_mean_by_category
+2025-04-08 07:59:43,737 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:43,737 - INFO - Exiting with job_id_81 from /api/state_mean_by_category
+2025-04-08 07:59:43,965 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:43,965 - INFO - Exiting with job_id_82 from /api/state_mean_by_category
+2025-04-08 07:59:44,191 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:44,191 - INFO - Exiting with job_id_83 from /api/state_mean_by_category
+2025-04-08 07:59:44,208 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:44,208 - INFO - Exiting with job_id_84 from /api/state_mean_by_category
+2025-04-08 07:59:44,436 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:44,437 - INFO - Exiting with job_id_85 from /api/state_mean_by_category
+2025-04-08 07:59:44,662 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:44,663 - INFO - Exiting with job_id_86 from /api/state_mean_by_category
+2025-04-08 07:59:44,886 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:44,886 - INFO - Exiting with job_id_87 from /api/state_mean_by_category
+2025-04-08 07:59:44,903 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:44,903 - INFO - Exiting with job_id_88 from /api/state_mean_by_category
+2025-04-08 07:59:45,126 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:45,126 - INFO - Exiting with job_id_89 from /api/state_mean_by_category
+2025-04-08 07:59:45,142 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:45,142 - INFO - Exiting with job_id_90 from /api/state_mean_by_category
+2025-04-08 07:59:45,159 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:45,159 - INFO - Exiting with job_id_91 from /api/state_mean_by_category
+2025-04-08 07:59:45,175 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:45,175 - INFO - Exiting with job_id_92 from /api/state_mean_by_category
+2025-04-08 07:59:45,398 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:45,399 - INFO - Exiting with job_id_93 from /api/state_mean_by_category
+2025-04-08 07:59:45,626 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:45,626 - INFO - Exiting with job_id_94 from /api/state_mean_by_category
+2025-04-08 07:59:45,853 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:45,854 - INFO - Exiting with job_id_95 from /api/state_mean_by_category
+2025-04-08 07:59:45,872 - INFO - Entered /api/state_mean_by_category
+2025-04-08 07:59:45,873 - INFO - Exiting with job_id_96 from /api/state_mean_by_category
+2025-04-08 07:59:46,108 - INFO - Entered /api/states_mean
+2025-04-08 07:59:46,108 - INFO - Exiting with job_id_97 from /api/states_mean
+2025-04-08 07:59:46,344 - INFO - Entered /api/states_mean
+2025-04-08 07:59:46,344 - INFO - Exiting with job_id_98 from /api/states_mean
+2025-04-08 07:59:46,595 - INFO - Entered /api/states_mean
+2025-04-08 07:59:46,596 - INFO - Exiting with job_id_99 from /api/states_mean
+2025-04-08 07:59:46,823 - INFO - Entered /api/states_mean
+2025-04-08 07:59:46,842 - INFO - Exiting with job_id_100 from /api/states_mean
+2025-04-08 07:59:47,079 - INFO - Entered /api/states_mean
+2025-04-08 07:59:47,079 - INFO - Exiting with job_id_101 from /api/states_mean
+2025-04-08 07:59:47,313 - INFO - Entered /api/states_mean
+2025-04-08 07:59:47,314 - INFO - Exiting with job_id_102 from /api/states_mean
+2025-04-08 07:59:47,554 - INFO - Entered /api/states_mean
+2025-04-08 07:59:47,555 - INFO - Exiting with job_id_103 from /api/states_mean
+2025-04-08 07:59:47,573 - INFO - Entered /api/states_mean
+2025-04-08 07:59:47,574 - INFO - Exiting with job_id_104 from /api/states_mean
+2025-04-08 07:59:47,792 - INFO - Entered /api/states_mean
+2025-04-08 07:59:47,793 - INFO - Exiting with job_id_105 from /api/states_mean
+2025-04-08 07:59:48,012 - INFO - Entered /api/worst5
+2025-04-08 07:59:48,012 - INFO - Exiting with job_id_106 from /api/worst5
+2025-04-08 07:59:48,228 - INFO - Entered /api/worst5
+2025-04-08 07:59:48,229 - INFO - Exiting with job_id_107 from /api/worst5
+2025-04-08 07:59:48,244 - INFO - Entered /api/worst5
+2025-04-08 07:59:48,245 - INFO - Exiting with job_id_108 from /api/worst5
+2025-04-08 07:59:48,469 - INFO - Entered /api/worst5
+2025-04-08 07:59:48,469 - INFO - Exiting with job_id_109 from /api/worst5
+2025-04-08 07:59:48,695 - INFO - Entered /api/worst5
+2025-04-08 07:59:48,696 - INFO - Exiting with job_id_110 from /api/worst5
+2025-04-08 07:59:48,921 - INFO - Entered /api/worst5
+2025-04-08 07:59:48,921 - INFO - Exiting with job_id_111 from /api/worst5
+2025-04-08 07:59:49,142 - INFO - Entered /api/worst5
+2025-04-08 07:59:49,143 - INFO - Exiting with job_id_112 from /api/worst5
+2025-04-08 07:59:49,368 - INFO - Entered /api/worst5
+2025-04-08 07:59:49,368 - INFO - Exiting with job_id_113 from /api/worst5
+2025-04-08 07:59:49,596 - INFO - Entered /api/worst5
+2025-04-08 07:59:49,597 - INFO - Exiting with job_id_114 from /api/worst5

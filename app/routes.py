@@ -4,7 +4,9 @@ from flask import request, jsonify
 from app import webserver
 
 def register_job(data, request_type):
-    ''' Register a new job and add it to the queue '''
+    ''' 
+        Register a new job and add it to the queue
+    '''
     webserver.logger.info("Entered /api/%s", request_type)
     if webserver.task_runner.shutdown is True:
         return jsonify({
@@ -28,13 +30,17 @@ def register_job(data, request_type):
     return jsonify({"job_id": job_id})
 
 def res_for(file_path):
-    ''' Returns the result from JSON file '''
+    ''' 
+        Returns the result from JSON file
+    '''
     with open(file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
 
 def get_job_status(job_id):
-    ''' Return job status '''
+    ''' 
+        Return job status
+    '''
     if job_id in webserver.task_runner.lst_done_jobs:
         return "done"
     return "running"

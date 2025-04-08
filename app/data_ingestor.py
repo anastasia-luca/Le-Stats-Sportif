@@ -32,7 +32,8 @@ class DataIngestor:
             'Percent of adults who engage in muscle-strengthening activities '
             'on 2 or more days a week',
         ]
-        self.barrier.wait()
+        if self.barrier:
+            self.barrier.wait()
 
     def states_mean(self, question):
         ''' Returns a dictionary for states_mean request '''
