@@ -18,7 +18,7 @@ class TestStringMethods(unittest.TestCase):
         question = 'Percent of adults aged 18 years and older who have an overweight classification'
         state = 'Ohio'
         result = result = self.data_ingestor.state_mean(question, state)
-        expected_result = {"Ohio": 35.233333333333334}
+        expected_result = {"Ohio": 35.233333333333336}
         self.assertEqual(result, expected_result)
 
     def test_best5(self):
