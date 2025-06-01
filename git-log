@@ -1,0 +1,83 @@
+commit 409ac4efd8dedca7f17556ac2786427061b1903b
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Wed Apr 9 17:54:53 2025 +0300
+
+    Added README
+
+commit cf6f814296a5cceae6f75e1d569437d6bdcc093b
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Tue Apr 8 11:03:38 2025 +0300
+
+    Finished unittesting
+
+commit 3eeeaeda449b4a532e1740611011aad22f840a10
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Mon Apr 7 22:06:10 2025 +0300
+
+    logging implemented
+
+commit 88083e9f398f6c70f3a5ea67b5188df0a6ef815d
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Mon Apr 7 16:44:20 2025 +0300
+
+    Graceful shutdown done
+
+commit f6f231cc1107398f1e0c925e72e35c4ee996785b
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Mon Apr 7 12:14:11 2025 +0300
+
+    Resolved pylint warnings
+
+commit c8b10108accee69908751fddb9a7404a0e641940
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Mon Apr 7 10:44:45 2025 +0300
+
+    Finished request functions
+
+commit 9887f35cf54c51740f1f1ec51899fa4b30800d3e
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Sun Apr 6 16:15:40 2025 +0300
+
+    data_ingestor changes
+
+commit cd603b25905bb42e1d5afa318361654e02eaf864
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Sun Apr 6 15:42:29 2025 +0300
+
+    changes to barrier
+
+commit f656c30cba68b19fb51102558e562bf7c8bd8282
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Sun Apr 6 15:13:11 2025 +0300
+
+    average functions
+
+commit bb162feca70f05eaaa438787552744bfcec30eea
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Sat Apr 5 22:26:29 2025 +0300
+
+    SimpleBarrier
+
+commit d352c5379ab0c02ba7b191506ffd95e084ce5d30
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Sat Apr 5 21:41:36 2025 +0300
+
+    Functions for data ingestor
+
+commit 669fcd3318dbdbe2c1ce4ec0e470ed118ec8a374
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Sat Apr 5 18:24:18 2025 +0300
+
+    endpoints done
+
+commit 2b9836464e3b2885ede1ee6dcd1800296286dbb4
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Sat Apr 5 14:44:25 2025 +0300
+
+    Register job
+
+commit 62aa46e208bc4b6559f197e9a47c60bcae998f56
+Author: anastasia-luca <anastasia.luca.al@gmail.com>
+Date:   Tue Apr 1 20:32:35 2025 +0300
+
+    Start
